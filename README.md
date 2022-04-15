@@ -1,11 +1,19 @@
 # Kafka OpenSearch Anomaly Detection Demo
 
-Instructions
+## Architecture
 
-1. Click on the Launch Stack button below and launch the CloudFormation stack
+## Instructions
 
-2. Once the CloudFormation stack is status CREATE_COMPLETE open the Cloud9 console
+1. Launch CloudFormation stack
 
-3. Run 1_create_topic.py
+2. Update msk security group to allow inbound traffic from the Cloud9 security group
 
-4. Run 1_create_index.py
+3. Create Kafka topic
+
+4. Create OpenSearch index
+
+5. Configure Lambda
+
+6. Send data to OpenSearch via. MSK + Lambda
+
+7. Create + run OpenSearch anomaly detector
