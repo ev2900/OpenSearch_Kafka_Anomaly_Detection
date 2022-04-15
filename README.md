@@ -24,6 +24,8 @@
 
 5. Configure Lambda
 
+    - 
+
 6. Send data to OpenSearch via. MSK + Lambda
 
 7. Create + run OpenSearch anomaly detector
