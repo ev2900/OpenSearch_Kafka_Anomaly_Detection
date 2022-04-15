@@ -5,3 +5,7 @@ Instructions
 1. Click on the Launch Stack button below and launch the CloudFormation stack
 
 2. Once the CloudFormation stack is status CREATE_COMPLETE open the Cloud9 console
+
+3. Run 1_create_topic.py
+
+4. Run 1_create_index.py
