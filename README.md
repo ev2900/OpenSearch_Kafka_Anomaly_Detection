@@ -20,7 +20,7 @@
 
 4. Create OpenSearch index
 
-    - via. Cloud9 update the required sections and run [OpenSearch/1_create_index.py](https://github.com/ev2900/Kafka_OpenSearch_Anomaly_Detection/blob/main/OpenSearch/1_create_index.py)
+    - via. Cloud9 **update** the required sections and run [OpenSearch/1_create_index.py](https://github.com/ev2900/Kafka_OpenSearch_Anomaly_Detection/blob/main/OpenSearch/1_create_index.py)
 
 5. Configure Lambda
 
