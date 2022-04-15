@@ -1,1 +1,1 @@
-# Kafka OpenSearch Anomaly_Detection
+# Kafka OpenSearch Anomaly Detection Demo
