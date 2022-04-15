@@ -16,9 +16,11 @@
 
     - Navigate to the [Cloud9](https://us-east-1.console.aws.amazon.com/cloud9/home?region=us-east-1#) page in the AWS console
     - Open IDE for the msk-workshop-cloud9 enviorment
-    - Follow the instructions in [1_create_topic.py](https://github.com/ev2900/Kafka_OpenSearch_Anomaly_Detection/blob/main/Kafka/1_create_topic.py)
+    - Follow the instructions in [Kafka/1_create_topic.py](https://github.com/ev2900/Kafka_OpenSearch_Anomaly_Detection/blob/main/Kafka/1_create_topic.py)
 
 4. Create OpenSearch index
+
+    - via. Cloud9 update the required sections and run [OpenSearch/1_create_index.py](https://github.com/ev2900/Kafka_OpenSearch_Anomaly_Detection/blob/main/OpenSearch/1_create_index.py)
 
 5. Configure Lambda
 
