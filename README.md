@@ -1,1 +1,1 @@
-# Kafka_OpenSearch_Anomaly_Detection
+# Kafka OpenSearch Anomaly_Detection
