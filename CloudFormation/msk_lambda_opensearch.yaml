@@ -211,14 +211,10 @@ Resources:
       SubnetId: !Ref Subnet1
       Repositories: [
         {
-          "PathComponent" : '/Kafka_Examples',
-          "RepositoryUrl" : 'https://github.com/ev2900/Kafka_Examples.git'
-        },
-        {
-          "PathComponent" : '/OpenSearch_API_Examples',
-          "RepositoryUrl" : 'https://github.com/ev2900/OpenSearch_API_Examples.git'
+          "PathComponent" : '/Kafka_OpenSearch_Anomaly_Detection',
+          "RepositoryUrl" : 'https://github.com/ev2900/Kafka_OpenSearch_Anomaly_Detection.git'
         }
-      ]
+]
 
   # -----------------
   # VPC Endpoints
