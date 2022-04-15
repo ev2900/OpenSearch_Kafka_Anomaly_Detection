@@ -24,7 +24,12 @@
 
 5. Configure Lambda
 
-    - 
+    - Add MSK trigger to the Lambda
+        - MSK cluster = ```msk-cluster-workshop```
+        - Batch size = ```100```
+        - Batch window = ```15```
+        - Topic name = ```ApplicationMetricTopic```
+        - Starting position = ```Latest```    
 
 6. Send data to OpenSearch via. MSK + Lambda
 
