@@ -59,3 +59,5 @@
 7. Create + run OpenSearch anomaly detector
 
     - via. Cloud9 update the required section(s) and run [OpenSearch/2_create_anomoly_detector.py](https://github.com/ev2900/Kafka_OpenSearch_Anomaly_Detection/blob/main/OpenSearch/2_create_anomoly_detector.py)
+
+8. Login to the OpenSeach dashboard, navigate to the anomoly detection section. Explore the anomolies OpenSearch detected
