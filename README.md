@@ -6,7 +6,7 @@
 
 1. Launch CloudFormation stack
 
-    [![Launch CloudFormation Stack](https://sharkech-public.s3.amazonaws.com/misc-public/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=open-search-demo-vpc&templateURL=https://sharkech-public.s3.amazonaws.com/misc-public/OpenSearch_demo_VPC.yaml)
+    [![Launch CloudFormation Stack](https://sharkech-public.s3.amazonaws.com/misc-public/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=msk-lambda-opensearch&templateURL=https://sharkech-public.s3.amazonaws.com/misc-public/msk_lambda_opensearch.yaml)
 
 2. Update msk security group to allow inbound traffic from Cloud9 security group
 
