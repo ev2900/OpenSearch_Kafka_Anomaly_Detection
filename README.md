@@ -2,6 +2,8 @@
 
 ## Architecture
 
+<img width="1000" alt="OpenSearch_demo_Architecture" src="https://github.com/ev2900/Kafka_OpenSearch_Anomaly_Detection/blob/main/Architecture/msk_lambda_opensearch.png">
+
 ## Instructions
 
 1. Launch CloudFormation stack
