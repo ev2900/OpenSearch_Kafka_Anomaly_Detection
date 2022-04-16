@@ -20,7 +20,7 @@
 
 4. Create OpenSearch index
 
-    - via. Cloud9 **update** the required sections and run [OpenSearch/1_create_index.py](https://github.com/ev2900/Kafka_OpenSearch_Anomaly_Detection/blob/main/OpenSearch/1_create_index.py)
+    - via. Cloud9 update the required sections and run [OpenSearch/1_create_index.py](https://github.com/ev2900/Kafka_OpenSearch_Anomaly_Detection/blob/main/OpenSearch/1_create_index.py)
 
 5. Configure Lambda
 
@@ -33,10 +33,12 @@
     
     - Update the ```os_url``` variable in the Lambda code with the domain endpoint of the OpenSearch cluster deployed by the CloudFormation stack  
 
-6. Send data to OpenSearch via. MSK + Lambda
+6. Send data to OpenSearch 
 
-    - Send base data
+    - Send base data via. Cloud9. Update the required section and run [Kafka/2_base_data.py](https://github.com/ev2900/Kafka_OpenSearch_Anomaly_Detection/blob/main/Kafka/2_base_data.py)
 
-    - Send anomoly data
+    - Send anomoly data via. Cloud9. Update the required section and run [Kafka/3_anomoly_data.py](https://github.com/ev2900/https://github.com/ev2900/Kafka_OpenSearch_Anomaly_Detection/blob/main/Kafka/3_anomoly_data.py)
 
 7. Create + run OpenSearch anomaly detector
+
+    - via. Cloud9 Update the required section and run [OpenSearch/2_create_anomoly_detector.py](https://github.com/ev2900/Kafka_OpenSearch_Anomaly_Detection/blob/main/OpenSearch/2_create_anomoly_detector.py)
