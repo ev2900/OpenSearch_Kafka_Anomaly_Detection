@@ -30,8 +30,8 @@
 
     - Add MSK trigger to the Lambda
         - MSK cluster = ```msk-cluster-workshop```
-        - Batch size = ```100```
-        - Batch window = ```15```
+        - Batch size = ```1```
+        - Batch window = ```10```
         - Topic name = ```ApplicationMetricTopic```
         - Starting position = ```Latest```   
     
