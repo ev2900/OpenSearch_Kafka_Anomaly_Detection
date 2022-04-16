@@ -28,14 +28,27 @@
 
     - Navigate to [lambda](https://us-east-1.console.aws.amazon.com/lambda/home?region=us-east-1#/functions/msk-os-lambda?tab=code) function page in the AWS console
 
-    - Add MSK trigger to the Lambda
+    - Create a lambda function
+        - Funcation name = ```msk-os-lambda```
+        - Runtime = ```python 3.7```
+        - Architecture = x86_64
+        - Permissions, Execution role = Use an existing role ```Lambda-MSK-OpenSearch-Role```
+        - Enable VPC
+            - VPC = ```msk-vpc```
+            - Subnet = ```msk-subnet-1``` + ```msk-subnet-2```
+            - Security groups = ```lambda security goup``` 
+
+    - Add MSK trigger
         - MSK cluster = ```msk-cluster-workshop```
         - Batch size = ```1```
-        - Batch window = ```10```
+        - Batch window = ```5```
         - Topic name = ```ApplicationMetricTopic```
         - Starting position = ```Latest```   
     
-    - Update the ```os_url``` variable in the lambda code with the domain endpoint of the OpenSearch cluster deployed by the CloudFormation stack. Then re-deploy the lambda function  
+    - Add code
+        - Copy and past the code from [Lambda/1_lambda_function_code.py] into the code section of the lambda function
+        - Update the ```os_url``` variable in the lambda code with the domain endpoint of the OpenSearch cluster deployed by the CloudFormation stack
+        - Deploy the lambda function  
 
 6. Send data to OpenSearch 
 
