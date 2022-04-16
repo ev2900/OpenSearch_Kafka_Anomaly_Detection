@@ -31,7 +31,7 @@
         - Topic name = ```ApplicationMetricTopic```
         - Starting position = ```Latest```   
     
-    - Update the os_url variable in the Lambda code with the domain endpoint of the OpenSearch cluster deployed by the CloudFormation stack  
+    - Update the ```os_url``` variable in the Lambda code with the domain endpoint of the OpenSearch cluster deployed by the CloudFormation stack  
 
 6. Send data to OpenSearch via. MSK + Lambda
 
