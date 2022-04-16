@@ -33,10 +33,6 @@
         - Runtime = ```python 3.7```
         - Architecture = x86_64
         - Permissions, Execution role = Use an existing role ```Lambda-MSK-OpenSearch-Role```
-        - Enable VPC
-            - VPC = ```msk-vpc```
-            - Subnet = ```msk-subnet-1``` + ```msk-subnet-2```
-            - Security groups = ```lambda security goup``` 
 
     - Add MSK trigger
         - MSK cluster = ```msk-cluster-workshop```
