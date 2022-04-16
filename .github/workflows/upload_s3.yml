@@ -29,5 +29,5 @@ jobs:
           aws-region: us-east-1
           
       - name: Upload OpenSearch_demo.yaml to S3
-        run: aws s3 cp /home/runner/work/ Kafka_OpenSearch_Anomaly_Detection/Kafka_OpenSearch_Anomaly_Detection/CloudFormation/msk_lambda_opensearch.yaml s3://sharkech-public/misc-public/msk_lambda_opensearch.yaml
+        run: aws s3 cp /home/runner/work/Kafka_OpenSearch_Anomaly_Detection/Kafka_OpenSearch_Anomaly_Detection/CloudFormation/msk_lambda_opensearch.yaml s3://sharkech-public/misc-public/msk_lambda_opensearch.yaml
         
