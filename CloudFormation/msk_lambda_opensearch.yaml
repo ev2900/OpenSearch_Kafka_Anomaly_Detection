@@ -95,49 +95,9 @@ Resources:
       FromPort: -1
       ToPort: -1
       SourceSecurityGroupId: !GetAtt MSKSecurityGroup.GroupId
-  # add inbound rule for lambda SG
-  LambdaGroupIngress1:
-    Type: 'AWS::EC2::SecurityGroupIngress'
-    Properties:
-      # Ingress rules
-      GroupId: !Ref MSKSecurityGroup
-      IpProtocol: -1
-      FromPort: -1
-      ToPort: -1
-      SourceSecurityGroupId: !GetAtt LambdaSecurityGroup.GroupId
 
   # add inbound rule for Cloud9 SG
   # ?
-
-  #
-  # Lambda Security Group
-  #   
-  LambdaSecurityGroup:
-    Type: AWS::EC2::SecurityGroup
-    Properties:
-      GroupName: 'lambda security group'
-      GroupDescription: 'lambda security group'
-      VpcId: !Ref VPC
-      # Egress rules
-      SecurityGroupEgress:
-        - IpProtocol: -1
-          FromPort: -1 
-          ToPort: -1
-          CidrIp: '0.0.0.0/0'
-      Tags:
-        - Key: Name
-          Value: 'lambda security group'
-  # add a self reference ingress rule 
-  LambdaSecurityGroupIngress1:
-    Type: 'AWS::EC2::SecurityGroupIngress'
-    Properties:
-      # Ingress rules
-      GroupId: !Ref LambdaSecurityGroup
-      IpProtocol: -1
-      FromPort: -1
-      ToPort: -1
-      SourceSecurityGroupId: !GetAtt LambdaSecurityGroup.GroupId
-
 
   # -----------------
   # Route Table
@@ -341,55 +301,7 @@ Resources:
               - Effect: Allow
                 Action: 'kafka:*'
                 Resource: '*'
-
-  # -----------------
-  # Lambda
-  # -----------------
-  MSKLambda:
-    Type: AWS::Lambda::Function
-    Properties:
-      Role: !GetAtt LambdaIAMRole.Arn
-      Runtime: python3.6
-      FunctionName: 'msk-os-lambda'
-      VpcConfig:
-        SecurityGroupIds:
-          - !GetAtt LambdaSecurityGroup.GroupId
-        SubnetIds:
-          - !Ref Subnet1
-          - !Ref Subnet2
-      Handler: index.handler
-      Code:
-        ZipFile: |
-          import json
-          import base64
-
-          def lambda_handler(event, context):
-    
-            # Decode Kafka message(s)
-            partition0 = event['records']
-            messages_raw = partition0['ApplicationMetricTopic-0']
-    
-            for message_raw in messages_raw:
-        
-              topic = message_raw['topic']
-              partition = message_raw['partition']
-              offset = message_raw['offset']
-              timestamp = message_raw['timestamp']
-              timestampType = message_raw['timestampType']
-              value = message_raw['value']
-              
-              decoded_b64_message_value = base64.b64decode(value)
-              decoded_utf8_message_value = decoded_b64_message_value.decode("utf-8")
-    
-              # Send message(s) to OpenSearch
-              
-              
-              return {
-                  'statusCode': 200,
-                  'body': json.dumps('Success')
-              }
            
-
 Outputs:
   UserName:
     Description: 'OpenSearch Dashboard Login UserName'
