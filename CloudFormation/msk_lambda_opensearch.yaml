@@ -211,7 +211,6 @@ Resources:
       ServiceName: !Sub 'com.amazonaws.${AWS::Region}.sts'
       SecurityGroupIds:
         - !GetAtt MSKSecurityGroup.GroupId
-        - !GetAtt LambdaSecurityGroup.GroupId
 
   # -----------------
   # OpenSearch
