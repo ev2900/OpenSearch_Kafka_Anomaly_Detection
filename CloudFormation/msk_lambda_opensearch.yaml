@@ -195,7 +195,6 @@ Resources:
       ServiceName: !Sub 'com.amazonaws.${AWS::Region}.lambda'
       SecurityGroupIds:
         - !GetAtt MSKSecurityGroup.GroupId
-        - !GetAtt LambdaSecurityGroup.GroupId
 
   #
   # STS VPC Endpoint
