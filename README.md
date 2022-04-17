@@ -44,7 +44,7 @@
         - Starting position = ```Latest```   
     
     - Add code
-        - Copy and past the code from [Lambda/1_lambda_function_code.py] into the code section of the lambda function
+        - Copy and past the code from [Lambda/1_lambda_function_code.py](https://github.com/ev2900/Kafka_OpenSearch_Anomaly_Detection/blob/main/Lambda/1_lambda_function_code.py) into the code section of the lambda function
         - Update the ```os_url``` variable in the lambda code with the domain endpoint of the OpenSearch cluster deployed by the CloudFormation stack
         - Deploy the lambda function  
 
