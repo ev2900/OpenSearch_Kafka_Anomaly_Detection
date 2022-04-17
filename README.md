@@ -38,8 +38,8 @@
 
     - Add MSK trigger
         - MSK cluster = ```msk-cluster-workshop```
-        - Batch size = ```1```
-        - Batch window = ```5```
+        - Batch size = ```500```
+        - Batch window = ```30```
         - Topic name = ```ApplicationMetricTopic```
         - Starting position = ```Latest```   
     
