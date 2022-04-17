@@ -3,7 +3,6 @@
 # --------------
 # If you have not already installed the requests package and/or the json package 
 # a. pip install requests
-# b. pip install json
 
 import requests
 import json

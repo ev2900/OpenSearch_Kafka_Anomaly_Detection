@@ -70,27 +70,3 @@ with topic.get_sync_producer() as producer:
         print("# " + str(count) + " | Message sent to Kafka | " + str(message_for_kafka))
         
         count = count + 1
-        
-'''
-Helpful notes:
-
-* Kafka has a set of scripts that can be run from the CLI. These are useful for common operations (create topic, console consmer + producer). To install the tools follow the steps below
-
-1. sudo yum install java-1.8.0
-2. wget https://archive.apache.org/dist/kafka/2.6.2/kafka_2.12-2.6.2.tgz
-3. tar -xzf kafka_2.12-2.6.2.tgz
-4. cd kafka_2.12-2.6.2
-
-* Example - Console cosumer
-
-1. cd kafka_2.12-2.6.2/bin/ folder
-1. Create client.properties file
-2. Put the following in the client.properties
-
-    security.protocol=PLAINTEXT
-
-3. Run the command below
-
-    ./kafka-console-consumer.sh --bootstrap-server <BootstrapBrokerConnectString> --consumer.config client.properties --topic <TopicName>
-
-'''
