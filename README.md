@@ -61,6 +61,3 @@
     - via. Cloud9 update the required section(s) and run [OpenSearch/2_create_anomoly_detector.py](https://github.com/ev2900/Kafka_OpenSearch_Anomaly_Detection/blob/main/OpenSearch/2_create_anomoly_detector.py)
 
 8. Login to the OpenSeach dashboard, navigate to the anomoly detection section. Explore the anomolies OpenSearch detected
-
-## Future Improvements
-* Update the Lambda function to use the [bulk insert API](https://opensearch.org/docs/latest/opensearch/rest-api/document-apis/bulk/). Right now it inserts the records one at a time
