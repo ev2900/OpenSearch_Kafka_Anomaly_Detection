@@ -33,7 +33,7 @@
     - Create a lambda function
         - Funcation name = ```msk-os-lambda```
         - Runtime = ```python 3.7```
-        - Architecture = x86_64
+        - Architecture = ```x86_64```
         - Permissions, Execution role = Use an existing role ```Lambda-MSK-OpenSearch-Role```
 
     - Add MSK trigger
