@@ -63,4 +63,4 @@
 8. Login to the OpenSeach dashboard, navigate to the anomoly detection section. Explore the anomolies OpenSearch detected
 
 ## Future Improvements Planned for this Repository
-* Automate more of the set up ie. try to minimize the number of steps in the instructions
+* Automate more of the set up ie. try to minimize the number of steps in the instructions 
