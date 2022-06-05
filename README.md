@@ -14,7 +14,7 @@
 
     - Navigate to [Security Group](https://us-east-1.console.aws.amazon.com/vpc/home?region=us-east-1#securityGroups:) page in the AWS console
     - Select ```msk security group```
-    - Add inbound bound rule allowing all traffic from the aws-cloud9 security group
+    - Add inbound bound rule allowing all traffic from the **aws-cloud9** security group
 
 3. Create Kafka topic
 
