@@ -219,7 +219,7 @@ Resources:
     Type: AWS::OpenSearchService::Domain
     Properties:
       DomainName: workshop-domain
-      EngineVersion: 'OpenSearch_1.1'
+      EngineVersion: 'OpenSearch_1.2'
       # Development configuration
       ClusterConfig:
         DedicatedMasterEnabled: false
