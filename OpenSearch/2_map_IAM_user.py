@@ -17,7 +17,7 @@ os_url = '<os_domain_url>'
 # Step 2 - Update ARN of IAM role to map to OpenSearch all_access role
 # --------------
 
-iam_arn = '<IAM_user/role_arn'
+iam_arn = '<IAM_user/role_arn>'
 
 # --------------
 # Step 3 - Map IAM user ARN to all_access role
