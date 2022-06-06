@@ -309,4 +309,7 @@ Outputs:
     Value: 'AwS#OpenSearch1'
   OSDomainURL:
     Description: 'OpenSearch domain endpoint URL'
-    Value: !Join [ "", [ "https://", !GetAtt OpenSearchDomain.DomainEndpoint] ] 
+    Value: !Join [ "", [ "https://", !GetAtt OpenSearchDomain.DomainEndpoint] ]
+  IAMUserARN:
+    Description: 'ARN of the IAM role LambdaIAMRole'
+    Value: !GetAtt LambdaIAMRole.Arn
