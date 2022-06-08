@@ -31,7 +31,7 @@ Step 1 - Update KAFKA_HOST with bootstrap servers URLs
          Update number_of_log_messages_to_send with the number of messages you want to send to Kafka
 '''
 
-KAFKA_HOST = "b-2.msk-workshop-cluster.dh9wkw.c24.kafka.us-east-1.amazonaws.com:9092,b-1.msk-workshop-cluster.dh9wkw.c24.kafka.us-east-1.amazonaws.com:9092" # Or the address you want
+KAFKA_HOST = "<plain_text_bootstrap_server>" # Or the address you want
 KAFKA_TOPIC = "ApplicationMetricTopic"
 
 number_of_log_messages_to_send = 10000
