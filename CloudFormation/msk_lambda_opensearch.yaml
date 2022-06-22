@@ -350,6 +350,7 @@ Resources:
                   http = urllib3.PoolManager()
                   
                   os_url = '<os_domain_endpoint_url>'
+                  os_url_clean = os_url.rstrip("/")
                   
                   insert_document_r_body = {
                       "eventtime": decoded_utf8_message_value_dict['eventtime'],
@@ -369,7 +370,7 @@ Resources:
                   bulk_documents_r_body = str(bulk_documents_r_body) + str(meta_data) + str('\n')
                   bulk_documents_r_body = str(bulk_documents_r_body) + str(insert_document_r_body) + str('\n') 
                   
-              full_url = os_url + '/infa-logs-1/_bulk/'
+              full_url = os_url_clean + '/infa-logs-1/_bulk/'
                   
               auth_header = urllib3.make_headers(basic_auth='OSMasterUser:AwS#OpenSearch1')
               
