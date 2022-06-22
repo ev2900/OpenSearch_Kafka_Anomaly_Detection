@@ -25,6 +25,7 @@ def random_date(start, end):
 # Step 1 - Update this URL with your domain endpoint
 # --------------
 os_url = 'https://search-workshop-domain-77uiopkggujcnt6dfn7fcena6m.us-east-1.es.amazonaws.com'
+os_url_clean = os_url.rstrip("/")
 
 # --------------
 # Step 2 - Create anomoly detector
@@ -66,7 +67,7 @@ create_detector_body = {
   ]
 }
 
-create_detector_r = requests.post(os_url + '/_plugins/_anomaly_detection/detectors', auth=('OSMasterUser', 'AwS#OpenSearch1'), headers= {'Content-type': 'application/json'}, data=json.dumps(create_detector_body))
+create_detector_r = requests.post(os_url_clean + '/_plugins/_anomaly_detection/detectors', auth=('OSMasterUser', 'AwS#OpenSearch1'), headers= {'Content-type': 'application/json'}, data=json.dumps(create_detector_body))
 
 print('------ Created an anomoly detector ------')
 print(create_detector_r.text)
