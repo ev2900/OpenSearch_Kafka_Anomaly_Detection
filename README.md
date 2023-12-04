@@ -1,6 +1,6 @@
 # Kafka OpenSearch Anomaly Detection Demo
 
-<img width="85" alt="map-user" src="https://img.shields.io/badge/views-0000-green"> <img width="125" alt="map-user" src="https://img.shields.io/badge/unique visits-0000-green">
+<img width="85" alt="map-user" src="https://img.shields.io/badge/views-571-green"> <img width="125" alt="map-user" src="https://img.shields.io/badge/unique visits-0000-green">
 
 ## Architecture
 
@@ -43,14 +43,14 @@
         - Batch size = ```500```
         - Batch window = ```30```
         - Topic name = ```ApplicationMetricTopic```
-        - Starting position = ```Latest```   
-    
+        - Starting position = ```Latest```
+
     - Add code
         - Copy and past the code from [Lambda/1_lambda_function_code_batch.py](https://github.com/ev2900/Kafka_OpenSearch_Anomaly_Detection/blob/main/Lambda/1_lambda_function_code_batch.py) into the code section of the lambda function
         - Update the ```os_url``` variable in the lambda code with the domain endpoint of the OpenSearch cluster deployed by the CloudFormation stack
-        - Deploy the lambda function  
+        - Deploy the lambda function
 
-6. Send data to OpenSearch 
+6. Send data to OpenSearch
 
     - Navigate to [Cloud9](https://us-east-1.console.aws.amazon.com/cloud9/home?region=us-east-1#) page in the AWS console
 
@@ -65,4 +65,4 @@
 8. Login to the OpenSeach dashboard, navigate to the anomoly detection section. Explore the anomolies OpenSearch detected
 
 ## Future Improvements Planned for this Repository
-* Automate more of the set up ie. try to minimize the number of steps in the instructions 
+* Automate more of the set up ie. try to minimize the number of steps in the instructions
