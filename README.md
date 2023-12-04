@@ -1,5 +1,7 @@
 # Kafka OpenSearch Anomaly Detection Demo
 
+<img width="85" alt="map-user" src="https://img.shields.io/badge/views-0000-green"> <img width="125" alt="map-user" src="https://img.shields.io/badge/unique visits-0000-green">
+
 ## Architecture
 
 <img width="900" alt="OpenSearch_demo_Architecture" src="https://github.com/ev2900/Kafka_OpenSearch_Anomaly_Detection/blob/main/Architecture/msk_lambda_opensearch.png">
