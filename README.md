@@ -1,6 +1,6 @@
 # Kafka OpenSearch Anomaly Detection Demo
 
-<img width="275" alt="map-user" src="https://img.shields.io/badge/cloudformation template deployments-80-blue"> <img width="85" alt="map-user" src="https://img.shields.io/badge/views-785-green"> <img width="125" alt="map-user" src="https://img.shields.io/badge/unique visits-255-green">
+<img width="275" alt="map-user" src="https://img.shields.io/badge/cloudformation template deployments-80-blue"> <img width="85" alt="map-user" src="https://img.shields.io/badge/views-800-green"> <img width="125" alt="map-user" src="https://img.shields.io/badge/unique visits-255-green">
 
 ## Architecture
 
